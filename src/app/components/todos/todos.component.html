@@ -1,5 +1,6 @@
 <div class="container">
     <h1 class="text-center">Todo List by CodewithPriya</h1>
+    <h2 [ngClass]="{red: isClicked && number % 5 != 0, green: isClicked && number % 5 == 0}" (click)="onClicked()">{{number}}</h2>
     <app-add-todo (todoAdd)="addTodo($event)"></app-add-todo>
     <h4>Your Todos</h4>
     <div *ngIf="this.todos.length===0; else elseBlock">No Todos to display</div>

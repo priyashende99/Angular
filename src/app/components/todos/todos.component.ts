@@ -7,6 +7,7 @@ import { Todo } from 'src/app/todo';
   styleUrls: ['./todos.component.scss']
 })
 export class TodosComponent {
+  number: number = 51;
   localItem: string | null = null;
   todos: Todo[] = [];
   isClicked:boolean = false;
