@@ -8,6 +8,11 @@ import { TodoItemComponent } from './components/todo-item/todo-item.component';
 import { AddTodoComponent } from './components/add-todo/add-todo.component';
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './components/about/about.component';
+import { BasicPageComponent } from './components/basic-page/basic-page.component';
+import { HeaderComponent } from './components/basic-page/header/header.component';
+import { SidenavComponent } from './components/basic-page/sidenav/sidenav.component';
+import { MainComponent } from './components/basic-page/main/main.component';
+import { FooterComponent } from './components/basic-page/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +20,12 @@ import { AboutComponent } from './components/about/about.component';
     TodosComponent,
     TodoItemComponent,
     AddTodoComponent,
-    AboutComponent
+    AboutComponent,
+    BasicPageComponent,
+    HeaderComponent,
+    SidenavComponent,
+    MainComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
