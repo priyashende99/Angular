@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'todolistAngular';
 
+  constructor(){
+    setTimeout(() => {
+      this.title = "First Angular Project";
+    }, 2000);
+  }
   
 }
