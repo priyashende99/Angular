@@ -13,6 +13,13 @@ import { HeaderComponent } from './components/basic-page/header/header.component
 import { SidenavComponent } from './components/basic-page/sidenav/sidenav.component';
 import { MainComponent } from './components/basic-page/main/main.component';
 import { FooterComponent } from './components/basic-page/footer/footer.component';
+import { ParentComponent } from './components/parent/parent.component';
+import { ChildComponent } from './components/child/child.component';
+import { FirstComponent } from './components/calculater/first/first.component';
+import { SecondComponent } from './components/calculater/second/second.component';
+import { ShapesComponent } from './components/shapes/shapes/shapes.component';
+import { ShapesFirstComponent } from './components/shapes/shapes-first/shapes-first.component';
+import { ShapesSecondComponent } from './components/shapes/shapes-second/shapes-second.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +32,14 @@ import { FooterComponent } from './components/basic-page/footer/footer.component
     HeaderComponent,
     SidenavComponent,
     MainComponent,
-    FooterComponent
+    FooterComponent,
+    ParentComponent,
+    ChildComponent,
+    FirstComponent,
+    SecondComponent,
+    ShapesComponent,
+    ShapesFirstComponent,
+    ShapesSecondComponent
   ],
   imports: [
     BrowserModule,

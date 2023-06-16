@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="first-box">
+        <div class="row">
+            <div class="col-md-4">
+                <label>First Number</label>
+                <input type="number" name="first-number" [(ngModel)]="firstNum">
+            </div>
+            <div class="col-md-1"><strong>+</strong></div>
+            <div class="col-md-4">
+                <label>Second Number</label>
+                <input type="number" name="second-number" [(ngModel)]="secondNum">
+            </div>
+            <div class="col-md-1"><strong>=</strong></div>
+            <div class="col-md-2">
+                {{output}}
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-2">
+                <div class="btn btn-primary" (click)="calculate()">Calculate</div>
+            </div>
+            <div class="col-md-3">
+                <div class="btn btn-danger"><a class="nav-link" (click)="secondCalc()">Next Page</a></div>
+            </div>
+        </div>
+    </div>
+</div>

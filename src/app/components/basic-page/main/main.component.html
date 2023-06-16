@@ -1,1 +1,11 @@
-<div>Main Body</div>
+<div class="main-body">
+    <h3>Main Body</h3>
+    <img [src]="imageSrc">
+    <div>
+        <input type="text" (input)="passValueToComponent($event)">
+    </div>
+    <div>
+        <input type="text" [(ngModel)]="defaultValue">
+        <span>{{defaultValue}}</span>
+    </div>
+</div>

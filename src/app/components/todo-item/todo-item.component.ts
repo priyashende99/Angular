@@ -11,7 +11,7 @@ export class TodoItemComponent {
   @Input() i: number = 0;
   @Output() todoDelete: EventEmitter<Todo> = new EventEmitter();
   @Output() todoCheckbBox: EventEmitter<Todo> = new EventEmitter();
-
+  
   onClick(todo:Todo){
     this.todoDelete.emit(todo);
     // console.log("Click method Called");
