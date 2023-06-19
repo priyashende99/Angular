@@ -20,6 +20,7 @@ import { SecondComponent } from './components/calculater/second/second.component
 import { ShapesComponent } from './components/shapes/shapes/shapes.component';
 import { ShapesFirstComponent } from './components/shapes/shapes-first/shapes-first.component';
 import { ShapesSecondComponent } from './components/shapes/shapes-second/shapes-second.component';
+import { TemplateDrivenComponent } from './components/template-driven/template-driven.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ShapesSecondComponent } from './components/shapes/shapes-second/shapes-
     SecondComponent,
     ShapesComponent,
     ShapesFirstComponent,
-    ShapesSecondComponent
+    ShapesSecondComponent,
+    TemplateDrivenComponent
   ],
   imports: [
     BrowserModule,

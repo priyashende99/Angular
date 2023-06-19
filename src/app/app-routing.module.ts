@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TodosComponent } from './components/todos/todos.component';
 import { AboutComponent } from './components/about/about.component';
@@ -7,6 +7,7 @@ import { ParentComponent } from './components/parent/parent.component';
 import { FirstComponent } from './components/calculater/first/first.component';
 import { SecondComponent } from './components/calculater/second/second.component';
 import { ShapesComponent } from './components/shapes/shapes/shapes.component';
+import { TemplateDrivenComponent } from './components/template-driven/template-driven.component';
 
 const routes: Routes = [
   { path: '', component:TodosComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'calculator-first', component:FirstComponent},
   { path: 'calculator-second', component:SecondComponent},
   { path: 'shapes', component:ShapesComponent },
+  { path: 'templateDriven', component:TemplateDrivenComponent},
   { path: '**', redirectTo:''}
 ];
 

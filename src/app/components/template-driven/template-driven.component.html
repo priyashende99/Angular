@@ -1,0 +1,41 @@
+<div class="container">
+    <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+        <div class="row">
+            <div class="col-lg-6 col-xl-5 col-md-9 mx-auto">
+                <div class="card mt-4">
+                    <div class="card-header bg-secondary text-white">
+                        <h3>Template Driven Approach</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group form-row">
+                            <label for="UserName" class="col-md-4 col-form-label">Username</label>
+                            <div class="col-md-8">
+                                <input ngModel type="text" class="form-control" placeholder="Username" name="UserName" required email #userName="ngModel">
+                                <small *ngIf="!userName.valid && userName.errors && userName.touched">Username is Invalid</small>
+                            </div>
+                        </div>
+            
+                        <div class="form-group form-row">
+                            <label for="Password" class="col-md-4 col-form-label">Password</label>
+                            <div class="col-md-8">
+                                <input ngModel type="password" class="form-control" placeholder="Password" name="Password" #password="ngModel" required>
+                                <small *ngIf="!password.valid && password.touched">Password is required</small>
+                            </div>
+                        </div>
+
+                      
+                        <div class="form-group form-row form-check mt-2">
+                            <input [ngModel]="true" name="readTerms" type="checkbox" class="form-check-input" id="readTerms" />
+                            <label class="form-check-label" for="readTerms">I have read terms and conditions</label>
+                        </div>
+            
+                    </div>
+        
+                    <div class="card-footer text-right">
+                        <button class="btn btn-primary" type="submit" [disabled]="!myForm.valid">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
